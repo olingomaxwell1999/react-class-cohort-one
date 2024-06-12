@@ -1,11 +1,12 @@
 
 import './App.scss'
-import Footer from './Components/Footer/Footer'
-import Navbar from './Components/Navbar/Navbar'
 import {createBrowserRouter, Outlet, RouterProvider} from 'react-router-dom'
 import Homepage from './Pages/Homepage/Homepage'
 import Jobpage from './Pages/Jobpage/Jobpage'
 import Addpage from './Pages/Addpage/Addpage'
+import Layout from './Components/Layout/Layout'
+import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
 import Line from './Components/Line/Line'
 
 
@@ -28,12 +29,14 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      <Line/>
-      <RouterProvider router={router}>
-        <Outlet/>
-      </RouterProvider>
-      <Footer/>
+      
+        <Navbar/>
+        <Line/>
+        <RouterProvider router={router}/>
+        <Footer/>
+        
+      
+    
     </>
   )
 }

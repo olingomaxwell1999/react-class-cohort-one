@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 
 $main-color: #4b0082;
 
-nav{
+nav {
     background-color: #4b0082;
     color: white;
     display: flex;
@@ -17,19 +17,19 @@ nav{
     height: 50px;
     padding: 10px 40px;
 
-    .logo-side{
+    .logo-side {
         display: flex;
         justify-content: center;
         gap: 10px;
         align-items: center;
 
-        img{
+        img {
             height: 90%;
         }
     }
 
-    .links-side{
-        .navlinks{
+    .links-side {
+        .navlinks {
             display: flex;
             gap: 20px;
             list-style: none;
@@ -43,7 +43,7 @@ nav{
     background-color: white;
 }
 
-.hero-section{
+.hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,4 +52,133 @@ nav{
     height: 250px;
     background-color: #4b0082;
     color: white;
+
+    h3 {
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.home {
+    padding: 20px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    .cardone {
+        padding: 20px;
+        box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        button {
+            padding: 5px;
+            width: fit-content;
+            font-size: 14px;
+            outline: none;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: all ease-in-out .3s;
+
+            &:hover {
+                background-color: white;
+                color: black;
+                border: 1px black solid;
+            }
+        }
+    }
+}
+
+.jobcardarea {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: aliceblue;
+
+    h2 {
+        font-size: 30px;
+        color: #4b0082;
+        margin-bottom: 5px;
+    }
+
+    .cardsarea {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+
+        .jobcard {
+            padding: 40px 20px;
+            box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h4 {
+                font-size: 14px;
+                font-weight: 300;
+                color: dimgrey;
+            }
+
+            p {
+                font-weight: 300;
+            }
+
+            .dollar {
+                color: #4b0082;
+            }
+
+            hr {
+                margin: -15px;
+            }
+
+            .btnarea {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .iconarea {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .location {
+                        color: red;
+                    }
+                }
+
+                button {
+                    padding: 5px;
+                    font-size: 14px;
+                    background-color: #4b0082;
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                    color: white;
+                    transition: all ease-in-out .3s;
+
+                    &:hover {
+                        background-color: white;
+                        color: #4b0082;
+                        border: 1px #4b0082 solid;
+                    }
+                }
+            }
+        }
+    }
 }
