@@ -1,5 +1,5 @@
 
-import './App.scss'
+import './shared/styles/App.scss'
 import {createBrowserRouter, Route, createRoutesFromElements, RouterProvider} from 'react-router-dom'
 import Homepage from './Pages/Homepage/Homepage'
 import Jobpage from './Pages/Jobpage/Jobpage'
